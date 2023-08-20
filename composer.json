@@ -1,0 +1,26 @@
+{
+    "name": "puleeno-cms/dashboard",
+    "description": "The dashboard extension for Puleeno",
+    "autoload": {
+        "psr-4": {
+            "PuleenoCMS\\Dashboard\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Puleeno Nguyen",
+            "email": "puleeno@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "vendor-dir": "libs"
+    },
+    "extension-class": "\\PuleenoCMS\\Dashboard\\DashboardExtension",
+    "filter-hooks": [],
+    "action-hooks": [],
+    "require-extensions": {
+        "puleeno-cms/layout": "*",
+        "puleeno-cms/react": "*"
+    }
+}
