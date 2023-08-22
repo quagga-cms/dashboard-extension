@@ -21,6 +21,8 @@
     "action-hooks": [],
     "require-extensions": {
         "puleeno-cms/layout": "*",
-        "puleeno-cms/react": "*"
+        "puleeno-cms/react": "*",
+        "puleeno-cms/blueprint": "*",
+        "puleeno-cms/text-editor": "*"
     }
 }
