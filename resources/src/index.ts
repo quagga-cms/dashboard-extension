@@ -1,1 +1,1 @@
-import '../sass/admin.scss';
+import '../sass/dashboard.scss';
