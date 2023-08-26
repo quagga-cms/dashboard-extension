@@ -6,7 +6,6 @@ use App\Core\Extension;
 use App\Core\Settings\SettingsInterface;
 use App\Http\Middleware\Authenticate;
 use PuleenoCMS\Dashboard\Http\Controllers\DashboardController;
-use PuleenoCMS\Dashboard\Models\Admin;
 use Slim\Routing\RouteCollectorProxy;
 
 class DashboardExtension extends Extension

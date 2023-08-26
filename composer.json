@@ -23,6 +23,7 @@
         "puleeno-cms/layout": "*",
         "puleeno-cms/react": "*",
         "puleeno-cms/blueprint": "*",
+        "puleeno-cms/file-manager": "*",
         "puleeno-cms/text-editor": "*"
     }
 }
