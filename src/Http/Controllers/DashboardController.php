@@ -2,12 +2,12 @@
 
 namespace PuleenoCMS\Dashboard\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Psr\Http\Message\ResponseInterface;
 
-class DashboardController extends Controller
+class DashboardController extends BaseController
 {
-    public function handle(ResponseInterface $response): ResponseInterface {
-        return $response;
+    public function handle(ResponseInterface $response): ResponseInterface
+    {
+        return $this->view('dashboard');
     }
 }
