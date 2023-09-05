@@ -25,7 +25,7 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
         $admin_prefix = $settings->get('admin_prefix', 'dashboard');
 
         $this->app->group($admin_prefix, function (RouteCollectorProxy $group) {
-            $group->get('', [DashboardController::class, 'handle']);
+            $group->get('', [DashboardController::class, 'handle'])->setName('dashboardTop');
             $group->get('{pagePath:/?.+}', [DashboardController::class, 'handle']);
         })->add(new Authenticate());
     }
