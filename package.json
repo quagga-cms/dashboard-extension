@@ -4,7 +4,11 @@
   "description": "The based dashboard for other extensions can be extend in Puleeno CMS",
   "main": "resources/src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "author": "Puleeno Nguyen",
   "license": "MIT",

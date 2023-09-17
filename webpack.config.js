@@ -15,7 +15,7 @@ const config = {
       dashboard: "./resources/src/index.ts"
     },
     output: {
-        path: path.resolve(__dirname, 'resources/assets'),
+        path: path.resolve(__dirname, 'assets'),
         filename: 'js/[name].js'
     },
     devServer: {
