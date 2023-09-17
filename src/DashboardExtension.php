@@ -2,17 +2,19 @@
 
 namespace PuleenoCMS\Dashboard;
 
+use Slim\Routing\RouteCollectorProxy;
+use App\Constracts\AssetTypeEnum;
 use App\Constracts\BackendExtensionConstract;
 use App\Constracts\FrontendExtensionConstract;
+use App\Core\AssetManager;
+use App\Core\Assets\AssetScriptOptions;
 use App\Core\Extension;
 use App\Core\ExtensionManager;
+use App\Core\Helper;
 use App\Core\HookManager;
 use App\Core\Settings\SettingsInterface;
 use App\Http\Middleware\Authenticate;
-use Psr\Http\Message\RequestInterface;
-use Psr\Http\Server\RequestHandlerInterface;
 use PuleenoCMS\Dashboard\Http\Controllers\DashboardController;
-use Slim\Routing\RouteCollectorProxy;
 
 class DashboardExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {
@@ -23,7 +25,9 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
         /**
          * @var \PuleenoCMS\React\ReactExtension
          */
-        $react = ExtensionManager::getExtension('puleeno-cms/react');
+        $reactExt = ExtensionManager::getExtension('puleeno-cms/react');
+        $reactAsset = $reactExt->getReactAsset();
+        AssetManager::getInstance()->getBackendBucket()->addAsset($reactAsset);
     }
 
     public function registerRoutes()
@@ -32,15 +36,29 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
         $settings = $this->container->get(SettingsInterface::class);
         $admin_prefix = $settings->get('admin_prefix', 'dashboard');
         $app = &$this->app;
-        $container = &$this->container;
+        $extension = &$this;
 
-        $this->app->group($admin_prefix, function (RouteCollectorProxy $group) use($app, $settings) {
+        $this->app->group($admin_prefix, function (RouteCollectorProxy $group) use ($app, $settings) {
             $group->get('', [DashboardController::class, 'handle'])->setName('dashboardTop');
             $group->get('{pagePath:/?.+}', [DashboardController::class, 'handle']);
 
             // Support custom dashboard or register dashboard content by other extensions
             HookManager::executeAction('setup_dashboard', $group, $app, $settings);
         })
-            ->add(new Authenticate());
+            ->add(new Authenticate())
+            ->add(function ($request, $handler) use ($extension) {
+                $reponse = $handler->handle($request);
+                AssetManager::registerBackendAsset(
+                    'dashboard',
+                    Helper::createExtensionAssetUrl($extension->getExtensionDir(), 'dashboard.js', 'dashboard.min.js'),
+                    AssetTypeEnum::JS(),
+                    ['react'],
+                    '1.0.0',
+                    AssetScriptOptions::parseOptionFromArray([
+                        'is_footer' => true,
+                    ])
+                )->enqueue();
+                return $reponse;
+            });
     }
 }

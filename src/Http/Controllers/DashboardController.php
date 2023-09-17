@@ -9,7 +9,7 @@ class DashboardController extends BaseController
 {
     public function handle(RequestInterface $request, ResponseInterface $response): ResponseInterface
     {
-        add_filter('title', function($title) {
+        add_filter('title', function ($title) {
             return 'Dashboard | ' .  $title;
         });
 
