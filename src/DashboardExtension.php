@@ -3,7 +3,6 @@
 namespace PuleenoCMS\Dashboard;
 
 use Slim\Routing\RouteCollectorProxy;
-
 use App\Constracts\AssetTypeEnum;
 use App\Constracts\BackendExtensionConstract;
 use App\Constracts\FrontendExtensionConstract;
@@ -15,9 +14,7 @@ use App\Core\Helper;
 use App\Core\HookManager;
 use App\Core\Settings\SettingsInterface;
 use App\Http\Middleware\Authenticate;
-
 use PuleenoCMS\Dashboard\Http\Controllers\DashboardController;
-
 
 class DashboardExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {
@@ -41,7 +38,7 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
         $app          = &$this->app;
         $extension    = &$this;
 
-        $this->app->group($admin_prefix, function (RouteCollectorProxy $group) use($app, $settings) {
+        $this->app->group($admin_prefix, function (RouteCollectorProxy $group) use ($app, $settings) {
             $group->get('', [DashboardController::class, 'handle'])->setName('dashboardTop');
             $group->get('{pagePath:/?.+}', [DashboardController::class, 'handle']);
 
@@ -49,7 +46,7 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
             HookManager::executeAction('setup_dashboard', $group, $app, $settings);
         })
             ->add(new Authenticate())
-            ->add(function($request, $handler) use ($extension) {
+            ->add(function ($request, $handler) use ($extension) {
                 $reponse = $handler->handle($request);
 
                 AssetManager::registerBackendAsset(

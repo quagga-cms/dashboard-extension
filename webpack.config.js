@@ -12,7 +12,7 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
     entry: {
-      dashboard: "./resources/src/index.ts"
+      dashboard: "./resources/src/index.tsx"
     },
     output: {
         path: path.resolve(__dirname, 'assets'),
@@ -52,7 +52,7 @@ const config = {
 
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
-        ],
+        ]
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
@@ -63,6 +63,10 @@ const config = {
             "react/jsx-runtime": "preact/jsx-runtime"
         },
     },
+    externals: {
+        react: "react",
+        "@puleeno-cms/react": "@puleeno-cms/react"
+    }
 };
 
 module.exports = () => {
