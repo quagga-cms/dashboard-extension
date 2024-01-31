@@ -1,6 +1,6 @@
 <?php
 
-namespace PuleenoCMS\Dashboard;
+namespace Jackal\Extension\Dashboard;
 
 use Slim\Routing\RouteCollectorProxy;
 use App\Constracts\AssetTypeEnum;
@@ -14,7 +14,7 @@ use App\Core\Helper;
 use App\Core\HookManager;
 use App\Core\Settings\SettingsInterface;
 use App\Http\Middleware\Authenticate;
-use PuleenoCMS\Dashboard\Http\Controllers\DashboardController;
+use Jackal\Extension\Dashboard\Http\Controllers\DashboardController;
 
 class DashboardExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {
@@ -23,9 +23,9 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
     public function bootstrap()
     {
         /**
-         * @var \PuleenoCMS\React\ReactExtension
+         * @var \Jackal\Extension\React\ReactExtension
          */
-        $reactExt = ExtensionManager::getExtension('puleeno-cms/react');
+        $reactExt = ExtensionManager::getExtension('jackal-cms/react');
         $reactAsset = $reactExt->getReactAsset();
         AssetManager::getInstance()->getBackendBucket()->addAsset($reactAsset);
     }

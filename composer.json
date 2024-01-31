@@ -1,9 +1,9 @@
 {
-    "name": "puleeno-cms/dashboard",
-    "description": "The dashboard extension for Puleeno",
+    "name": "jackal-cms/dashboard",
+    "description": "The dashboard extension for Jackal",
     "autoload": {
         "psr-4": {
-            "PuleenoCMS\\Dashboard\\": "src/"
+            "Jackal\\Extension\\Dashboard\\": "src/"
         }
     },
     "authors": [
@@ -16,14 +16,14 @@
     "config": {
         "vendor-dir": "libs"
     },
-    "extension-class": "\\PuleenoCMS\\Dashboard\\DashboardExtension",
+    "extension-class": "\\Jackal\\Extension\\Dashboard\\DashboardExtension",
     "filter-hooks": [],
     "action-hooks": [],
     "require-extensions": {
-        "puleeno-cms/layout": "*",
-        "puleeno-cms/react": "*",
-        "puleeno-cms/layout-uikit": "*",
-        "puleeno-cms/file-manager": "*",
-        "puleeno-cms/text-editor": "*"
+        "jackal-cms/layout": "*",
+        "jackal-cms/react": "*",
+        "jackal-cms/layout-uikit": "*",
+        "jackal-cms/file-manager": "*",
+        "jackal-cms/text-editor": "*"
     }
 }

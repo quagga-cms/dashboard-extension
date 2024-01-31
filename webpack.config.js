@@ -65,7 +65,7 @@ const config = {
     },
     externals: {
         react: "react",
-        "@puleeno-cms/react": "@puleeno-cms/react"
+        "@jackal-cms/react": "@jackal-cms/react"
     }
 };
 

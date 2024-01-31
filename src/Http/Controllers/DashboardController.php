@@ -1,6 +1,6 @@
 <?php
 
-namespace PuleenoCMS\Dashboard\Http\Controllers;
+namespace Jackal\Extension\Dashboard\Http\Controllers;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

@@ -1,7 +1,7 @@
 {
-  "name": "@puleeno-cms/dashboard",
+  "name": "@jackal/dashboard",
   "version": "1.0.0",
-  "description": "The based dashboard for other extensions can be extend in Puleeno CMS",
+  "description": "The based dashboard for other extensions can be extend in Jackal CMS",
   "main": "resources/src/index.ts",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
@@ -33,8 +33,8 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
-    "@puleeno-cms/blueprint": "github:puleeno-cms/blueprint-extension",
-    "@puleeno-cms/react": "github:puleeno-cms/react-extension",
+    "@jackal/blueprint": "github:jackal-cms/blueprint-extension",
+    "@jackal/react": "github:jackal-cms/react-extension",
     "preact": "^10.17.1",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat"
