@@ -22,7 +22,6 @@
     "require-extensions": {
         "jackal-cms/layout": "*",
         "jackal-cms/react": "*",
-        "jackal-cms/layout-uikit": "*",
         "jackal-cms/file-manager": "*",
         "jackal-cms/text-editor": "*"
     }
