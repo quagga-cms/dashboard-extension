@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Core\Settings\SettingsInterface;
+use Jackal\Jackal\Settings\SettingsInterface;
 use App\Http\Middleware\Authenticate;
 use Jackal\Extension\Dashboard\Http\Controllers\DashboardController;
 use Slim\App;
