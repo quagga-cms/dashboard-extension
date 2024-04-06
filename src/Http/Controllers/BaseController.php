@@ -1,6 +1,6 @@
 <?php
 
-namespace Jackal\Extension\Dashboard\Http\Controllers;
+namespace Quagga\Extension\Dashboard\Http\Controllers;
 
 use App\Constracts\BackendControllerConstract;
 use App\Http\Controllers\Controller;

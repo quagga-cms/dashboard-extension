@@ -1,9 +1,9 @@
 {
-    "name": "jackal-cms/dashboard",
-    "description": "The dashboard extension for Jackal",
+    "name": "quagga-cms/dashboard",
+    "description": "The dashboard extension for Quagga",
     "autoload": {
         "psr-4": {
-            "Jackal\\Extension\\Dashboard\\": "src/"
+            "Quagga\\Extension\\Dashboard\\": "src/"
         }
     },
     "authors": [
@@ -16,13 +16,13 @@
     "config": {
         "vendor-dir": "libs"
     },
-    "extension-class": "\\Jackal\\Extension\\Dashboard\\DashboardExtension",
+    "extension-class": "\\Quagga\\Extension\\Dashboard\\DashboardExtension",
     "filter-hooks": [],
     "action-hooks": [],
     "require-extensions": {
-        "jackal-cms/layout": "*",
-        "jackal-cms/react": "*",
-        "jackal-cms/file-manager": "*",
-        "jackal-cms/text-editor": "*"
+        "quagga-cms/layout": "*",
+        "quagga-cms/react": "*",
+        "quagga-cms/file-manager": "*",
+        "quagga-cms/text-editor": "*"
     }
 }

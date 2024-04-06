@@ -1,7 +1,7 @@
 {
-  "name": "@jackal/dashboard",
+  "name": "@quagga/dashboard",
   "version": "1.0.0",
-  "description": "The based dashboard for other extensions can be extend in Jackal CMS",
+  "description": "The based dashboard for other extensions can be extend in Quagga CMS",
   "main": "resources/src/index.ts",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
@@ -33,8 +33,8 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
-    "@jackal/blueprint": "github:jackal-cms/blueprint-extension",
-    "@jackal/react": "github:jackal-cms/react-extension",
+    "@quagga/blueprint": "github:quagga-cms/blueprint-extension",
+    "@quagga/react": "github:quagga-cms/react-extension",
     "preact": "^10.17.1",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat"

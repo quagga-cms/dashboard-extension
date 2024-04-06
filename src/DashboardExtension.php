@@ -1,20 +1,20 @@
 <?php
 
-namespace Jackal\Extension\Dashboard;
+namespace Quagga\Extension\Dashboard;
 
 use Slim\Routing\RouteCollectorProxy;
 use App\Constracts\AssetTypeEnum;
 use App\Constracts\BackendExtensionConstract;
 use App\Constracts\FrontendExtensionConstract;
-use Jackal\Jackal\AssetManager;
-use Jackal\Jackal\Assets\AssetScriptOptions;
-use Jackal\Jackal\Extension;
-use Jackal\Jackal\ExtensionManager;
-use Jackal\Jackal\Helper;
-use Jackal\Jackal\HookManager;
-use Jackal\Jackal\Settings\SettingsInterface;
+use Quagga\Quagga\AssetManager;
+use Quagga\Quagga\Assets\AssetScriptOptions;
+use Quagga\Quagga\Extension;
+use Quagga\Quagga\ExtensionManager;
+use Quagga\Quagga\Helper;
+use Quagga\Quagga\HookManager;
+use Quagga\Quagga\Settings\SettingsInterface;
 use App\Http\Middleware\Authenticate;
-use Jackal\Extension\Dashboard\Http\Controllers\DashboardController;
+use Quagga\Extension\Dashboard\Http\Controllers\DashboardController;
 
 class DashboardExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {
@@ -23,9 +23,9 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
     public function bootstrap()
     {
         /**
-         * @var \Jackal\Extension\React\ReactExtension
+         * @var \Quagga\Extension\React\ReactExtension
          */
-        $reactExt = ExtensionManager::getExtension('jackal-cms/react');
+        $reactExt = ExtensionManager::getExtension('quagga-cms/react');
         $reactAsset = $reactExt->getReactAsset();
         AssetManager::getInstance()->getBackendBucket()->addAsset($reactAsset);
     }

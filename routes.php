@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Jackal\Jackal\Settings\SettingsInterface;
+use Quagga\Quagga\Settings\SettingsInterface;
 use App\Http\Middleware\Authenticate;
-use Jackal\Extension\Dashboard\Http\Controllers\DashboardController;
+use Quagga\Extension\Dashboard\Http\Controllers\DashboardController;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as RouteCollectorProxy;
 
