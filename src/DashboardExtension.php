@@ -3,9 +3,9 @@
 namespace Quagga\Extension\Dashboard;
 
 use Slim\Routing\RouteCollectorProxy;
-use App\Constracts\AssetTypeEnum;
-use App\Constracts\BackendExtensionConstract;
-use App\Constracts\FrontendExtensionConstract;
+use Quagga\Quagga\Constracts\AssetTypeEnum;
+use Quagga\Quagga\Constracts\BackendExtensionConstract;
+use Quagga\Quagga\Constracts\FrontendExtensionConstract;
 use Quagga\Quagga\AssetManager;
 use Quagga\Quagga\Assets\AssetScriptOptions;
 use Quagga\Quagga\Extension;

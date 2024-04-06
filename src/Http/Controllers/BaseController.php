@@ -2,7 +2,7 @@
 
 namespace Quagga\Extension\Dashboard\Http\Controllers;
 
-use App\Constracts\BackendControllerConstract;
+use Quagga\Quagga\Constracts\BackendControllerConstract;
 use App\Http\Controllers\Controller;
 
 abstract class BaseController extends Controller implements BackendControllerConstract
