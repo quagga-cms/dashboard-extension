@@ -65,7 +65,7 @@ const config = {
     },
     externals: {
         react: "react",
-        "@quagga-cms/react": "@quagga-cms/react"
+        "@quagga/react": "@quagga/react"
     }
 };
 

@@ -25,7 +25,7 @@ class DashboardExtension extends Extension implements FrontendExtensionConstract
         /**
          * @var \Quagga\Extension\React\ReactExtension
          */
-        $reactExt = ExtensionManager::getExtension('quagga-cms/react');
+        $reactExt = ExtensionManager::getExtension('quagga/react');
         $reactAsset = $reactExt->getReactAsset();
         AssetManager::getInstance()->getBackendBucket()->addAsset($reactAsset);
     }

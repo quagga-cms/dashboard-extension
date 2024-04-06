@@ -33,8 +33,8 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
-    "@quagga/blueprint": "github:quagga-cms/blueprint-extension",
-    "@quagga/react": "github:quagga-cms/react-extension",
+    "@quagga/blueprint": "github:quagga/blueprint-extension",
+    "@quagga/react": "github:quagga/react-extension",
     "preact": "^10.17.1",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat"

@@ -1,5 +1,5 @@
 {
-    "name": "quagga-cms/dashboard",
+    "name": "quagga/dashboard",
     "description": "The dashboard extension for Quagga",
     "autoload": {
         "psr-4": {
@@ -20,9 +20,9 @@
     "filter-hooks": [],
     "action-hooks": [],
     "require-extensions": {
-        "quagga-cms/layout": "*",
-        "quagga-cms/react": "*",
-        "quagga-cms/file-manager": "*",
-        "quagga-cms/text-editor": "*"
+        "quagga/layout": "*",
+        "quagga/react": "*",
+        "quagga/file-manager": "*",
+        "quagga/text-editor": "*"
     }
 }
