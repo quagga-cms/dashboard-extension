@@ -3,7 +3,7 @@
         'name' => 'quagga/dashboard',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'b3f9f08c2b9240562e48d5cae99270140a68403c',
+        'reference' => '878e42b50475fcb0fe6424adccbbaf603a8c16cb',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -24,7 +24,7 @@
         'quagga/dashboard' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'b3f9f08c2b9240562e48d5cae99270140a68403c',
+            'reference' => '878e42b50475fcb0fe6424adccbbaf603a8c16cb',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
