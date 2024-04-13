@@ -1,5 +1,47 @@
 {
-    "packages": [],
+    "packages": [
+        {
+            "name": "quagga/constracts",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/quagga-cms/constracts.git",
+                "reference": "978d5861979e50ff0d82c9799c4ea0df4b48e574"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/quagga-cms/constracts/zipball/978d5861979e50ff0d82c9799c4ea0df4b48e574",
+                "reference": "978d5861979e50ff0d82c9799c4ea0df4b48e574",
+                "shasum": ""
+            },
+            "time": "2024-04-13T04:13:18+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Quagga\\Constracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Puleeno",
+                    "email": "puleeno@gmail.com"
+                }
+            ],
+            "description": "The Quagga framework constracts",
+            "support": {
+                "issues": "https://github.com/quagga-cms/constracts/issues",
+                "source": "https://github.com/quagga-cms/constracts/tree/master"
+            },
+            "install-path": "../quagga/constracts"
+        }
+    ],
     "dev": true,
     "dev-package-names": []
 }

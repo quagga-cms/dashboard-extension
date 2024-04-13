@@ -12,10 +12,13 @@
             "email": "puleeno@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "quagga/constracts": "dev-master"
+    },
     "config": {
         "vendor-dir": "libs"
     },
+    "minimum-stability": "dev",
     "extension-class": "\\Quagga\\Extension\\Dashboard\\DashboardExtension",
     "filter-hooks": [],
     "action-hooks": [],

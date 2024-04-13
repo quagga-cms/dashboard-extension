@@ -1,0 +1,19 @@
+{
+    "name": "quagga/constracts",
+    "description": "The Quagga framework constracts",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Quagga\\Constracts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Puleeno",
+            "email": "puleeno@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

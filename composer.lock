@@ -4,11 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48771a731da02901d8707513b51b4608",
-    "packages": [],
+    "content-hash": "fb8f3bbe68bc9492ce540e930da053c6",
+    "packages": [
+        {
+            "name": "quagga/constracts",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/quagga-cms/constracts.git",
+                "reference": "978d5861979e50ff0d82c9799c4ea0df4b48e574"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/quagga-cms/constracts/zipball/978d5861979e50ff0d82c9799c4ea0df4b48e574",
+                "reference": "978d5861979e50ff0d82c9799c4ea0df4b48e574",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Quagga\\Constracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Puleeno",
+                    "email": "puleeno@gmail.com"
+                }
+            ],
+            "description": "The Quagga framework constracts",
+            "support": {
+                "issues": "https://github.com/quagga-cms/constracts/issues",
+                "source": "https://github.com/quagga-cms/constracts/tree/master"
+            },
+            "time": "2024-04-13T04:13:18+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,

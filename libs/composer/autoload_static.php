@@ -10,6 +10,7 @@ class ComposerStaticInitec8fdfc200e6224e51247fbf289c0eba
         'Q' => 
         array (
             'Quagga\\Extension\\Dashboard\\' => 27,
+            'Quagga\\Constracts\\' => 18,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInitec8fdfc200e6224e51247fbf289c0eba
         'Quagga\\Extension\\Dashboard\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Quagga\\Constracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/quagga/constracts/src',
         ),
     );
 
