@@ -4,10 +4,10 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb8f3bbe68bc9492ce540e930da053c6",
+    "content-hash": "5946b32e34e9bdda642c0025b4fa09e5",
     "packages": [
         {
-            "name": "quagga/constracts",
+            "name": "quagga/contracts",
             "version": "dev-master",
             "source": {
                 "type": "git",
@@ -48,7 +48,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "quagga/contracts": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

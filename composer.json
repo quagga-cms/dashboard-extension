@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "quagga/constracts": "dev-master"
+        "quagga/contracts": "dev-master"
     },
     "config": {
         "vendor-dir": "libs"

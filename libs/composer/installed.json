@@ -1,7 +1,7 @@
 {
     "packages": [
         {
-            "name": "quagga/constracts",
+            "name": "quagga/contracts",
             "version": "dev-master",
             "version_normalized": "dev-master",
             "source": {
@@ -18,7 +18,7 @@
             "time": "2024-04-13T04:13:18+00:00",
             "default-branch": true,
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Quagga\\Constracts\\": "src/"
@@ -39,7 +39,7 @@
                 "issues": "https://github.com/quagga-cms/constracts/issues",
                 "source": "https://github.com/quagga-cms/constracts/tree/master"
             },
-            "install-path": "../quagga/constracts"
+            "install-path": "../quagga/contracts"
         }
     ],
     "dev": true,
